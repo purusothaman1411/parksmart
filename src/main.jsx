@@ -7,6 +7,10 @@ import App from './ParkApp'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter><AppProvider><App /></AppProvider></BrowserRouter>
+    <BrowserRouter basename="/parksmart">
+      <AppProvider>
+        <App />
+      </AppProvider>
+    </BrowserRouter>
   </StrictMode>,
 )
